@@ -18,21 +18,12 @@ Describes regular expressions in Windows PowerShell.
 
 Windows PowerShell supports the following regular expression characters.
 
-Format   Logic                            Example
--------- -------------------------------  -----------------------
-value    Matches exact characters         "book" -match "oo"
-anywhere in the original value.
-
-.        Matches any single character.    "copy" -match "c..y"
-
-[value]  Matches at least one of the      "big" -match "b[iou]g"
-characters in the brackets.
-
-[range]  Matches at least one of the      "and" -match "[a-e]nd"
-characters within the range.
-The use of a hyphen (-) allows
-you to specify an adjacent
-character.
+Format|Logic|Example
+----------|---------------------------------|-------------------------
+value|Matches exact characters anywhere in the original value.|"book" -match "oo"
+.|Matches any single character.|"copy" -match "c..y"
+[value]|Matches at least one of the characters in the brackets.|"big" -match "b[iou]g"
+[range]|Matches at least one of the characters within the range. The use of a hyphen (-) allows you to specify an adjacent character.|"and" -match "[a-e]nd"
 
 [^]      Matches any characters except    "and" -match "[^brt]nd"
 those in brackets.
